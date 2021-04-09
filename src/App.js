@@ -7,11 +7,13 @@ function App() {
   return (
     <body>
       <Header />
-      <Switch>
-        <Route path="/"></Route>
-        <Route path="/search"></Route>
-        <Route path="/contact"></Route>
-      </Switch>
+      <main>
+        <Switch>
+          <Route path="/"></Route>
+          <Route path="/search"></Route>
+          <Route path="/contact"></Route>
+        </Switch>
+      </main>
     </body>
   );
 }
