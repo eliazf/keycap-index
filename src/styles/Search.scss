@@ -1,0 +1,58 @@
+#search-page-div {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  height: calc(100vh - 104px);
+}
+
+#search-tag-div {
+  background-color: cadetblue;
+  width: 70%;
+  padding: 4%;
+
+  .tag-classes {
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      label {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        padding: 0.5em 1em 0.5em;
+        margin: 0.5em 0.5em 0;
+
+        border-radius: 5px;
+        cursor: pointer;
+        user-select: none;
+        width: 100px;
+      }
+
+      label:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  #color-tag {
+    label {
+      background-color: red;
+    }
+  }
+  #brand-tag {
+    label {
+      background-color: green;
+    }
+  }
+  #material-tag {
+    label {
+      background-color: white;
+    }
+  }
+}
+
+#search-items-div {
+  background-color: rebeccapurple;
+  width: 130%;
+}
