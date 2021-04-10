@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./Header.scss";
+import "../styles/Header.scss";
 
-import logo from "./img/logo.png";
+import logo from "../img/logo.png";
 
 function Header() {
   return (

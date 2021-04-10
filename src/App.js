@@ -1,20 +1,33 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Header from "./Header";
+import Header from "./mainComponents/Header";
+import Home from "./mainComponents/Home";
+import Search from "./mainComponents/Search";
+import Contact from "./mainComponents/Contact";
+import Donate from "./mainComponents/Donate";
 
 function App() {
   return (
-    <body>
+    <>
       <Header />
       <main>
         <Switch>
-          <Route path="/"></Route>
-          <Route path="/search"></Route>
-          <Route path="/contact"></Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/donate">
+            <Donate />
+          </Route>
         </Switch>
       </main>
-    </body>
+    </>
   );
 }
 
