@@ -1,18 +1,34 @@
-#header {
+$header-background-color: #222831;
+$header-color: #eeeeee;
+$light-blue: #00adb5;
+
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: $header-background-color;
+  padding: 1em;
   font-size: 1.5em;
 }
 
-.header-link {
-  padding: 0.5em 3em 0.5em;
+ul li {
+  list-style: none;
+  display: inline-flex;
+  padding: 0 2.5em 0;
+  border-right: 4px solid black;
 }
 
-#classic-links {
-  display: inline-flex;
+ul li:last-child {
+  border-right: none;
+}
 
-  & li {
-    list-style: none;
-  }
+a {
+  text-decoration: none;
+  color: $header-color;
+}
+
+#donate-link {
+  background-color: $light-blue;
+  padding: 0.5em 1em;
+  border-radius: 10%;
 }

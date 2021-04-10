@@ -3,26 +3,31 @@ import { Link } from "react-router-dom";
 
 import "./Header.scss";
 
+import logo from "./img/logo.png";
+
 function Header() {
   return (
-    <div id="header">
-      <ul id="classic-links">
-        <li className="header-link">
+    <header>
+      <Link to="/">
+        <img src={logo} alt="Logo"></img>
+      </Link>
+
+      <ul id="nav-links">
+        <li>
           <Link to="/">Home</Link>
         </li>
-        <li className="header-link">
+        <li>
           <Link to="/search">Search</Link>
         </li>
-        <li className="header-link">
+        <li>
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
-      <div id="donate-link" className="header-link">
-        <Link to="/donate" id="donate-link">
-          Donate
-        </Link>
-      </div>
-    </div>
+
+      <Link to="/donate" id="donate-link">
+        Donate
+      </Link>
+    </header>
   );
 }
 
