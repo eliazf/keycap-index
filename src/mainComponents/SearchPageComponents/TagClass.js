@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { SearchContext } from "../SearchContext";
 
 function TagClass(props) {
-  console.log(props);
+  const { addRemoveTag } = useContext(SearchContext);
   const tags = props.tags.map((tag) => (
     <label>
-      <input type="checkbox" name="checkbox" value="value" />
+      <input
+        type="checkbox"
+        name="checkbox"
+        onChange={() => addRemoveTag(tag)}
+      />
       <p>{tag}</p>
     </label>
   ));
