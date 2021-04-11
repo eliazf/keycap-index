@@ -7,7 +7,6 @@ export function SearchContextProvider({ children }) {
 
   function addRemoveTag(tag) {
     if (!selectedTags.some((currentTag) => currentTag === tag)) {
-      console.log("i-m in");
       setSelectedTags((prevTags) => [...prevTags, tag]);
     } else {
       setSelectedTags((prevTags) => prevTags.filter((_tag) => _tag !== tag));
