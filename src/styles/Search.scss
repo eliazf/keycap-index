@@ -12,6 +12,7 @@
 
   .tag-classes {
     width: 100%;
+    padding-bottom: 3em;
 
     ul {
       display: flex;
@@ -34,25 +35,65 @@
       }
     }
   }
-
-  #color-tag {
-    label {
-      background-color: red;
-    }
-  }
-  #brand-tag {
-    label {
-      background-color: green;
-    }
-  }
-  #material-tag {
-    label {
-      background-color: white;
-    }
-  }
 }
 
 #search-items-div {
   background-color: rebeccapurple;
   width: 130%;
+  padding: 4%;
+  .item {
+    width: 100%;
+    margin-bottom: 3em;
+    border: solid 4px black;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    grid-template-areas:
+      "img Title Title"
+      "img price price"
+      "img ul ul";
+
+    .item-price {
+      grid-area: price;
+    }
+
+    img {
+      grid-area: img;
+    }
+
+    .item-title {
+      grid-area: Title;
+    }
+
+    ul {
+      grid-area: ul;
+      display: flex;
+      align-items: center;
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 1.5em 0;
+      }
+      li:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.color-tag {
+  label {
+    background-color: red;
+  }
+}
+.brand-tag {
+  label {
+    background-color: green;
+  }
+}
+.material-tag {
+  label {
+    background-color: white;
+  }
 }

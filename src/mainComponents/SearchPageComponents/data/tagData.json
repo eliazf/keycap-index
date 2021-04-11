@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Color",
+    "tags": ["red", "green", "blue"],
+    "cssClass": "color-tag"
+  },
+  {
+    "title": "Brand",
+    "tags": ["Ducky", "Xuebay", "Bangood", "Mechzone"],
+    "cssClass": "brand-tag"
+  },
+  {
+    "title": "Material",
+    "tags": ["ABS", "PBT", "Policarbonate", "PVC"],
+    "cssClass": "material-tag"
+  }
+]
