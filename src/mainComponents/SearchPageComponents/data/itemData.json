@@ -3,18 +3,30 @@
     "name": "Set di copritasti con pittura a inchiostro cinese",
     "url": "https://imgaz1.staticbg.com/thumb/other_items/oaupload/ser1/banggood/images/2A/A3/f8bb8192-2615-432f-9c0b-89e569b6edf2.JPG.webp",
     "price": 23.85,
-    "tags": ["grey", "white", "PBT", "MechZone"]
+    "tags": {
+      "color": ["white"],
+      "brand": "MechZone",
+      "material": "PBT"
+    }
   },
   {
     "name": "Coral Sea Keycap",
     "url": "https://imgaz1.staticbg.com/thumb/other_items/oaupload/banggood/images/C5/1E/9cad624a-e7ad-4d89-b7d5-fd3f539feaf3.jpg.webp",
     "price": 28.11,
-    "tags": ["white", "light-blue", "orange", "PBT"]
+    "tags": {
+      "color": ["white", "light-blue", "orange"],
+      "brand": "",
+      "material": "PBT"
+    }
   },
   {
     "name": "Plum Blossom Keycap",
     "url": "https://imgaz1.staticbg.com/thumb/other_items/oaupload/banggood/images/97/4E/87cc62a8-b3cf-4e57-9a19-16dd96224cc8.JPG.webp",
     "price": 33.22,
-    "tags": ["white", "grey", "red", "PBT", "MechZone"]
+    "tags": {
+      "color": ["white", "grey", "red"],
+      "brand": "MechZone",
+      "material": "PBT"
+    }
   }
 ]

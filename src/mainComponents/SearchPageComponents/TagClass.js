@@ -9,7 +9,7 @@ function TagClass(props) {
       <input
         type="checkbox"
         name="checkbox"
-        onChange={() => addRemoveTag(tag)}
+        onChange={() => addRemoveTag(props.cssClass.slice(0, -4), tag)}
       />
       <p>{tag}</p>
     </label>

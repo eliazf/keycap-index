@@ -2,12 +2,16 @@ import React, { useContext } from "react";
 
 import { SearchContext } from "../SearchContext";
 
-import useIsSubset from "./useIsSubset";
+import useIsCorrispondent from "./useIsCorrispondent";
 
 function Item(props) {
   const { selectedTags } = useContext(SearchContext);
-  const isCorrispondent = useIsSubset(props.tags, selectedTags);
-  const tags = props.tags.map((tag) => <li>{tag}</li>);
+  const isCorrispondent = useIsCorrispondent(selectedTags, props.tags);
+  const tags = [
+    props.tags.color.map((colorTag) => <li>{colorTag}</li>),
+    <li>{props.tags.brand}</li>,
+    <li>{props.tags.material}</li>,
+  ];
 
   const component = isCorrispondent ? (
     <div className="item">
