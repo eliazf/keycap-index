@@ -3,7 +3,6 @@ function useIsCorrispondent(selectedTags, keycapTags) {
   //OR for elements of the same type of tags
 
   for (let i in keycapTags) {
-    console.log(keycapTags[i]);
     if (keycapTags[i] instanceof Array) {
       if (selectedTags[i].some((tag) => keycapTags[i].includes(tag))) {
       } else if (selectedTags[i].length === 0) {

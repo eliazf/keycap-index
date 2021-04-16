@@ -9,7 +9,8 @@ export function SearchContextProvider({ children }) {
     material: [],
   });
 
-  //da fixare
+  const [sortMethod, setSortMethod] = useState("")
+
   function addRemoveTag(tagCategory, tag) {
     if (!selectedTags[tagCategory].some((_tag) => _tag === tag)) {
       setSelectedTags((prevTags) => {
@@ -25,10 +26,8 @@ export function SearchContextProvider({ children }) {
     }
   }
 
-  console.log(selectedTags);
-
   return (
-    <SearchContext.Provider value={{ selectedTags, addRemoveTag }}>
+    <SearchContext.Provider value={{ selectedTags, addRemoveTag, sortMethod, setSortMethod }}>
       {children}
     </SearchContext.Provider>
   );
