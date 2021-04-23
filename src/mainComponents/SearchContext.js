@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import itemData from "./SearchPageComponents/data/itemData.json";
+
 export const SearchContext = React.createContext();
 
 export function SearchContextProvider({ children }) {
@@ -9,7 +11,9 @@ export function SearchContextProvider({ children }) {
     material: [],
   });
 
-  const [sortMethod, setSortMethod] = useState("")
+  const [sortMethod, setSortMethod] = useState("");
+
+  const [priceRange, setPriceRange] = useState([0, 60]);
 
   function addRemoveTag(tagCategory, tag) {
     if (!selectedTags[tagCategory].some((_tag) => _tag === tag)) {
@@ -27,7 +31,17 @@ export function SearchContextProvider({ children }) {
   }
 
   return (
-    <SearchContext.Provider value={{ selectedTags, addRemoveTag, sortMethod, setSortMethod }}>
+    <SearchContext.Provider
+      value={{
+        itemData,
+        selectedTags,
+        addRemoveTag,
+        sortMethod,
+        setSortMethod,
+        priceRange,
+        setPriceRange,
+      }}
+    >
       {children}
     </SearchContext.Provider>
   );

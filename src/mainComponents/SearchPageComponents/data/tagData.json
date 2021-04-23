@@ -11,7 +11,7 @@
   },
   {
     "title": "Material",
-    "tags": ["ABS", "PBT", "Policarbonate", "PVC"],
+    "tags": ["ABS", "PBT", "PC", "PVC"],
     "cssClass": "material-tag"
   }
 ]
